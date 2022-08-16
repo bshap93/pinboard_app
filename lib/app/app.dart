@@ -1,0 +1,3 @@
+class AppSetup {
+  // pointless except
+}
