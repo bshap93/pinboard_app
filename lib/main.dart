@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pinboard_app/ui/recent_pins/recent_pins_view.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'app/locator.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+
   runApp(const MyApp());
 }
 

@@ -8,13 +8,8 @@ class PinBookMarkRaw {
   String tag;
   String hashId;
 
-  PinBookMarkRaw(
-    this.href, 
-    this.time, 
-    this.description, 
-    this.extended, 
-    this.tag, 
-    this.hashId);
+  PinBookMarkRaw(this.href, this.time, this.description, this.extended,
+      this.tag, this.hashId);
 }
 
 class PinBookmark {
@@ -31,16 +26,14 @@ class PinBookmark {
     required this.tags,
     this.description = '',
     this.linkURL = '',
-    
     this.extended = '',
-  })
+  });
 }
 
 class Tag {
   final String tagName;
 
   Tag(this.tagName);
-
 }
 
 class PinboardDate {
@@ -52,5 +45,4 @@ class PinboardDate {
 
     // TODO implement dateObject
   }
-
 }

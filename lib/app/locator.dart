@@ -1,9 +1,9 @@
-// import 'package:get_it/get_it.dart';
+import 'package:get_it/get_it.dart';
 
-// import '../services/todos.services.dart';
+import '../services/recent_pins.services.dart';
 
-// final locator = GetIt.instance;
+final locator = GetIt.instance;
 
-// setupLocator() {
-//   locator.registerLazySingleton(() => TodosService());
-// }
+setupLocator() {
+  locator.registerLazySingleton(() => RecentPinsService());
+}
